@@ -18,6 +18,8 @@ class CreateCampBenefitsTable extends Migration
             $table->bigInteger('camp_id')->unsigned();
             $table->string('name');
             $table->timestamps();
+
+            $table->foreign('camp_id')->references('id')->on('camps')->onDelete('cascade');
         });
     }
 
