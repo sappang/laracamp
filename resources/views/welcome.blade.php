@@ -196,7 +196,7 @@
                         <div class="col-lg-6 col-12">
                             <div class="table-pricing paket-gila">
                                 <p class="story text-center">
-                                    GILA BELAJAR
+                                    SMILE
                                 </p>
                                 <h1 class="price text-center">
                                     $280K
@@ -265,7 +265,7 @@
                                     <div class="clear"></div>
                                 </div>
                                 <p>
-                                    <a href="{{ route('checkout') }}" class="btn btn-master btn-primary w-100 mt-3">
+                                    <a href="{{ route('checkout.create','b-smile') }}" class="btn btn-master btn-primary w-100 mt-3">
                                         Take This Plan
                                     </a>
                                 </p>
@@ -273,8 +273,8 @@
                         </div>
                         <div class="col-lg-6 col-12">
                             <div class="table-pricing paket-biasa">
-                                <p class="story text-center">
-                                    BARU MULAI
+                                <p class="story text-center text-uppercase">
+                                    Happy
                                 </p>
                                 <h1 class="price text-center">
                                     $140K
@@ -311,7 +311,7 @@
                                     <div class="clear"></div>
                                 </div>
                                 <p>
-                                    <a href="{{ route('checkout') }}" class="btn btn-master btn-secondary w-100 mt-3">
+                                    <a href="{{ route('checkout.create','b-happy') }}" class="btn btn-master btn-secondary w-100 mt-3">
                                         Start With This Plan
                                     </a>
                                 </p>
