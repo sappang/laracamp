@@ -18,7 +18,7 @@ class CheckoutController extends Controller
         Midtrans\Config::$serverKey = env('MIDTRANS_SERVERKEY');
         Midtrans\Config::$isProduction = env('MIDTRANS_IS_PRODUCTION');
         Midtrans\Config::$isSanitized = env('MIDTRANS_IS_SANITIZED');
-        Midtrans\Config::$is3Ds = env('MIDTRANS_IS_3DS');
+        Midtrans\Config::$is3ds = env('MIDTRANS_IS_3DS');
 
     }
 
