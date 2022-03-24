@@ -34,10 +34,15 @@
                                 <strong>{{ $checkout->Camp->price }}K</strong>
                             </td>
                             <td>
-                                @if ($checkout->is_paid)
+                                @if ($checkout->payment_status == 'Paid')
                                     <strong class="text-success">Udah Bayar</strong>
                                 @else
                                     <strong>Waiting for Payment</strong>
+                                @endif
+                            </td>
+                            <td>
+                                @if ($checkout->payment_status == 'waiting')
+                                    <a href="{{ $checkout->midtrans_url }}" class="btn btn-primary">Pay Here</a>
                                 @endif
                             </td>
                             <td>
@@ -49,7 +54,7 @@
                         @empty
 
                             <td colspan="5">
-                                <h3>No data</h3>
+                                <h3>No Camp Registered</h3>
                             </td>
                             
                         @endforelse
